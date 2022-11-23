@@ -3,7 +3,7 @@
 
 A Xabbo script that can be used to make music in Habbo Hotel using SFX furni and wired.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ltpeuaoyoNA/0.jpg)](https://www.youtube.com/watch?v=ltpeuaoyoNA)
+[![Xabbo Music - Game of Thrones theme](https://user-images.githubusercontent.com/34200697/203616198-720f8d33-697f-41ba-b560-44228e5b90c9.png)](https://www.youtube.com/watch?v=ltpeuaoyoNA)
 ## How it works
 
 ![xabbo-music-explanation-0](https://user-images.githubusercontent.com/34200697/203398655-88011d0f-5b41-4cf5-8474-83e9a5259550.png)
