@@ -3,6 +3,7 @@
 
 A Xabbo script that can be used to make music in Habbo Hotel using SFX furni and wired.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ltpeuaoyoNA/0.jpg)](https://www.youtube.com/watch?v=ltpeuaoyoNA)
 ## How it works
 
 ![xabbo-music-explanation-0](https://user-images.githubusercontent.com/34200697/203398655-88011d0f-5b41-4cf5-8474-83e9a5259550.png)
@@ -59,7 +60,7 @@ The id of your magic tile. You can easily get it by clicking the magic tile with
 ![setup-3](https://user-images.githubusercontent.com/34200697/203593703-c51baa44-73bd-4d0d-a727-70c297cb1b78.png)
 ## Supported SFX Items
 
-#### Xylophone SFX 
+#### Xylophone SFX
 
 ![sfx_xylo](https://user-images.githubusercontent.com/34200697/203387249-33279d77-2e6d-4205-ae36-c186ffc1a7e4.png) 
 
@@ -79,7 +80,7 @@ Y | F
 U | G
 I | G#
 
-#### Xylophone High SFX 
+#### Xylophone High SFX
 
 ![sfx_xylo_high](https://user-images.githubusercontent.com/34200697/203387252-9de6b4de-c707-4065-8f96-7bdae944179c.png)
 
@@ -99,7 +100,7 @@ J | f#
 M | g
 , | g#
 
-#### Pad SFX 
+#### Pad SFX
 
 ![sfx_pad1](https://user-images.githubusercontent.com/34200697/203387247-13ebf4f7-33e1-4eec-97af-328e5be01dab.png)
 
@@ -119,7 +120,7 @@ Character | Note | Keys
 ♀ | g | ALT + 12
 ♪ | g# | ALT + 13
 
-#### Funky Horn SFX 
+#### Funky Horn SFX
 
 ![sfx_funkhorn](https://user-images.githubusercontent.com/34200697/203387245-c388f8ec-eccb-437c-bdbe-48a77ddeb200.png)
 
@@ -139,7 +140,7 @@ $ | e | ALT + 36
 ) | g | ALT + 41
 \* | g# | ALT + 42
 
-#### Duck SFX 
+#### Duck SFX
 
 ![sfx_duck](https://user-images.githubusercontent.com/34200697/203387241-2b6439e3-bcb3-4c13-8d7f-d8b1167a8b2b.png)
 
