@@ -58,10 +58,13 @@ Choose a tile to put all SFX furni you gonna use. You'll need to place your magi
 The id of your magic tile. You can easily get it by clicking the magic tile with G-Earth connected.
 
 ![setup-3](https://user-images.githubusercontent.com/34200697/203593703-c51baa44-73bd-4d0d-a727-70c297cb1b78.png)
+
 ## Playing the music
 
 Once all the wireds are placen down, all you need to play the music is trigger the WIRED Effect: Timer Reset
+
 ![setup-5](https://user-images.githubusercontent.com/34200697/203620731-2a3b7ad1-5214-45eb-8023-c42cbd1b4136.png)
+
 ## Supported SFX Items
 
 #### Xylophone SFX
