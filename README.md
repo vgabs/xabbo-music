@@ -13,16 +13,6 @@ SFX furni in Habbo plays a different note based on the height of that furni. Wit
 ![xabbo-music-explanation-1](https://user-images.githubusercontent.com/34200697/203410366-3f0cbb7f-b351-4e08-b99f-85e686e4472e.png)
 
 The script attributes a character for every SFX furni and note, and using this characters you can create a song. You can find all characters and notes on the tables of "Supported SFX Items" section.
-
-## Setup
-
-![setup-0](https://user-images.githubusercontent.com/34200697/203589110-99c0e303-39b5-4844-b5b3-cf004256ecfb.png)
-
-You'll need to change the highlighted data on the script for it to work in your room.
-
-#### Song
-
-Use different notes and delays to make your songs, or copy one from example-songs.json
 ####
 Music example (Game of Thrones Theme)
 ```
@@ -38,6 +28,16 @@ Character | Function
 --- | ---
 space | 0,5s delay
 \- | 0,5s delay
+
+## Setup
+
+![setup-0](https://user-images.githubusercontent.com/34200697/203589110-99c0e303-39b5-4844-b5b3-cf004256ecfb.png)
+
+You'll need to change the highlighted data on the script for it to work in your room.
+
+#### Song
+
+Use different notes and delays to make your songs, or copy one from example-songs.json
 
 #### Wired space
 
@@ -58,6 +58,10 @@ Choose a tile to put all SFX furni you gonna use. You'll need to place your magi
 The id of your magic tile. You can easily get it by clicking the magic tile with G-Earth connected.
 
 ![setup-3](https://user-images.githubusercontent.com/34200697/203593703-c51baa44-73bd-4d0d-a727-70c297cb1b78.png)
+## Playing the music
+
+Once all the wireds are placen down, all you need to play the music is trigger the WIRED Effect: Timer Reset
+![setup-5](https://user-images.githubusercontent.com/34200697/203620731-2a3b7ad1-5214-45eb-8023-c42cbd1b4136.png)
 ## Supported SFX Items
 
 #### Xylophone SFX
