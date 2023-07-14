@@ -1,0 +1,114 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>xabbo_music</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\button_backward_green.png" />
+    <None Remove="Images\button_backward_green_pressed.png" />
+    <None Remove="Images\button_backward_yellow.png" />
+    <None Remove="Images\button_backward_yellow_pressed.png" />
+    <None Remove="Images\button_close.png" />
+    <None Remove="Images\button_forward_green.png" />
+    <None Remove="Images\button_forward_green_pressed.png" />
+    <None Remove="Images\button_forward_yellow.png" />
+    <None Remove="Images\button_forward_yellow_pressed.png" />
+    <None Remove="Images\button_timeline_build.png" />
+    <None Remove="Images\button_timeline_build_pressed.png" />
+    <None Remove="Images\button_timeline_load.png" />
+    <None Remove="Images\button_timeline_load_pressed.png" />
+    <None Remove="Images\button_timeline_save.png" />
+    <None Remove="Images\button_timeline_save_pressed.png" />
+    <None Remove="Images\button_timeline_stop.png" />
+    <None Remove="Images\button_timeline_stop_pressed.png" />
+    <None Remove="Images\button_timeline_trash.png" />
+    <None Remove="Images\button_timeline_trash_pressed.png" />
+    <None Remove="Images\button_zoom_in.png" />
+    <None Remove="Images\button_zoom_in_pressed.png" />
+    <None Remove="Images\button_zoom_out.png" />
+    <None Remove="Images\button_zoom_out_pressed.png" />
+    <None Remove="Images\detail_timeline_selector.png" />
+    <None Remove="Images\glowball_miniature.png" />
+    <None Remove="Images\jukebox_retro_background.png" />
+    <None Remove="Images\jukebox_topbar_dots.png" />
+    <None Remove="Images\more_notes_icon.png" />
+    <None Remove="Images\room_selector_topbar_dots.png" />
+    <None Remove="Images\sfx_bass_miniature.png" />
+    <None Remove="Images\sfx_doubleBass_miniature.png" />
+    <None Remove="Images\sfx_duck_miniature.png" />
+    <None Remove="Images\sfx_funkyHorn_miniature.png" />
+    <None Remove="Images\sfx_glass_miniature.png" />
+    <None Remove="Images\sfx_pad2_miniature.png" />
+    <None Remove="Images\sfx_pad3_miniature.png" />
+    <None Remove="Images\sfx_pad_miniature.png" />
+    <None Remove="Images\sfx_squarePad_miniature.png" />
+    <None Remove="Images\sfx_whistle_miniature.png" />
+    <None Remove="Images\sfx_xyloHigh_miniature.png" />
+    <None Remove="Images\sfx_xylophoneHighPattern_miniature.png" />
+    <None Remove="Images\sfx_xylophonePattern_miniature.png" />
+    <None Remove="Images\sfx_xylo_miniature.png" />
+    <None Remove="Images\wired_miniature.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\button_close.png" />
+    <Resource Include="Images\button_timeline_build.png" />
+    <Resource Include="Images\button_timeline_build_pressed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xabbo.Common" Version="1.0.0-beta.3" />
+    <PackageReference Include="Xabbo.Core" Version="1.0.0-beta.4" />
+    <PackageReference Include="Xabbo.GEarth" Version="1.0.0-beta.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\button_backward_green.png" />
+    <Resource Include="Images\button_backward_green_pressed.png" />
+    <Resource Include="Images\button_backward_yellow.png" />
+    <Resource Include="Images\button_backward_yellow_pressed.png" />
+    <Resource Include="Images\button_forward_green.png" />
+    <Resource Include="Images\button_forward_green_pressed.png" />
+    <Resource Include="Images\button_forward_yellow.png" />
+    <Resource Include="Images\button_forward_yellow_pressed.png" />
+    <Resource Include="Images\button_timeline_load.png" />
+    <Resource Include="Images\button_timeline_load_pressed.png" />
+    <Resource Include="Images\button_timeline_save.png" />
+    <Resource Include="Images\button_timeline_save_pressed.png" />
+    <Resource Include="Images\button_timeline_stop.png" />
+    <Resource Include="Images\button_timeline_stop_pressed.png" />
+    <Resource Include="Images\button_timeline_trash.png" />
+    <Resource Include="Images\button_timeline_trash_pressed.png" />
+    <Resource Include="Images\button_zoom_in.png" />
+    <Resource Include="Images\button_zoom_in_pressed.png" />
+    <Resource Include="Images\button_zoom_out.png" />
+    <Resource Include="Images\button_zoom_out_pressed.png" />
+    <Resource Include="Images\detail_timeline_selector.png" />
+    <Resource Include="Images\glowball_miniature.png" />
+    <Resource Include="Images\jukebox_retro_background.png" />
+    <Resource Include="Images\jukebox_topbar_dots.png" />
+    <Resource Include="Images\more_notes_icon.png" />
+    <Resource Include="Images\room_selector_topbar_dots.png" />
+    <Resource Include="Images\sfx_bass_miniature.png" />
+    <Resource Include="Images\sfx_doubleBass_miniature.png" />
+    <Resource Include="Images\sfx_duck_miniature.png" />
+    <Resource Include="Images\sfx_funkyHorn_miniature.png" />
+    <Resource Include="Images\sfx_glass_miniature.png" />
+    <Resource Include="Images\sfx_pad2_miniature.png" />
+    <Resource Include="Images\sfx_pad3_miniature.png" />
+    <Resource Include="Images\sfx_pad_miniature.png" />
+    <Resource Include="Images\sfx_squarePad_miniature.png" />
+    <Resource Include="Images\sfx_whistle_miniature.png" />
+    <Resource Include="Images\sfx_xyloHigh_miniature.png" />
+    <Resource Include="Images\sfx_xylophoneHighPattern_miniature.png" />
+    <Resource Include="Images\sfx_xylophonePattern_miniature.png" />
+    <Resource Include="Images\sfx_xylo_miniature.png" />
+    <Resource Include="Images\wired_miniature.png" />
+  </ItemGroup>
+
+</Project>

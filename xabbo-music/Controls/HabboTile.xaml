@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="xabbo_music.Controls.HabboTile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:xabbo_music.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="64">
+    <Grid>
+        <Rectangle Width="12" Height="6" Fill="#6d624b" MouseDown="Tile_MouseDown" MouseUp="Tile_MouseUp" MouseLeave="Tile_MouseLeave" PreviewMouseMove="Rectangle_PreviewMouseMove"/>
+        <Rectangle Width="20" Height="2" Fill="#6d624b" MouseDown="Tile_MouseDown" MouseUp="Tile_MouseUp" MouseLeave="Tile_MouseLeave" PreviewMouseMove="Rectangle_PreviewMouseMove"/>
+        <Rectangle Width="4" Height="10" Fill="#6d624b" MouseDown="Tile_MouseDown" MouseUp="Tile_MouseUp" MouseLeave="Tile_MouseLeave" PreviewMouseMove="Rectangle_PreviewMouseMove"/>
+    </Grid>
+</UserControl>

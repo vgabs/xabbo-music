@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "KKDGOhfneo9yaZhXIHvBAPOt/+jTU3kD9k5f+BbTgo7FM6tmzU3KZediAjlQdA/sIS8qzxCJPmHR6KmKKyzcdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vinic\\source\\repos\\xabbo-music\\xabbo-music\\xabbo-music.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\xabbo.common\\1.0.0-beta.3\\xabbo.common.1.0.0-beta.3.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\xabbo.core\\1.0.0-beta.4\\xabbo.core.1.0.0-beta.4.nupkg.sha512",
+    "C:\\Users\\Vinic\\.nuget\\packages\\xabbo.gearth\\1.0.0-beta.3\\xabbo.gearth.1.0.0-beta.3.nupkg.sha512"
+  ],
+  "logs": []
+}

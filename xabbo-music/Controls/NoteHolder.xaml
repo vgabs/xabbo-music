@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="xabbo_music.Controls.NoteHolder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:xabbo_music.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="28" d:DesignWidth="28">
+    <Border Width="25" Height="25" x:Name="MainBorder" Background="#3e606e" PreviewMouseMove="Control_PreviewMouseMove" MouseUp="Control_MouseUp" MouseLeave="Control_MouseLeave" MouseDown="Control_MouseDown" BorderThickness="1, 2, 1, 1" CornerRadius="5" BorderBrush="#22353c" Margin="0,1,0,0">
+        <Grid>
+            <Border x:Name="HighlightBorder" Visibility="Hidden" BorderThickness="2, 2, 0, 0" CornerRadius="5" BorderBrush="#30FFFFFF"/>
+            <Border x:Name="DarkHighlightBorder" Visibility="Hidden" BorderThickness="0, 0, 2, 2" CornerRadius="5" BorderBrush="#30000000"/>
+            <TextBlock x:Name="TB_Note" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Background="Transparent" FontWeight="Bold" Foreground="White" Width="20" Height="20"/>
+        </Grid>
+    </Border>
+</UserControl>

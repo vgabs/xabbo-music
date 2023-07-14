@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="xabbo_music.Controls.NoteInventory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:xabbo_music.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="179" d:DesignWidth="163">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#b3b3b3" CornerRadius="3, 3, 0, 0" BorderBrush="Black" BorderThickness="1">
+            <Grid>
+                <Grid>
+                    <Border CornerRadius="3, 3, 0, 0" BorderThickness="2, 2, 0, 0" BorderBrush="#50FFFFFF">
+                        <Border BorderThickness="0, 1, 0, 1" BorderBrush="#50FFFFFF" Margin="5,1,5,4">
+                            <TextBlock Name="EffectName" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,0,0,0" FontSize="14" Foreground="White"/>
+                        </Border>
+                    </Border>
+                </Grid>
+
+                <Grid>
+                    <Border CornerRadius="3, 3, 0, 0" BorderThickness="0, 0, 2, 2" BorderBrush="#50000000">
+                        <Border BorderThickness="0, 1, 0, 1" BorderBrush="#50000000" Margin="7,4,3,1">
+                            <Border x:Name="BT_Close" CornerRadius="2" MouseDown="BT_Close_MouseDown" MouseUp="BT_Close_MouseUp" MouseLeave="BT_Close_MouseLeave" Background="#a12632" Cursor="Hand" BorderBrush="Black" BorderThickness="1" Width="13" Height="13" HorizontalAlignment="Right" Margin="0,0,3,0">
+                                <Border CornerRadius="1" MouseDown="BT_Close_MouseDown" MouseUp="BT_Close_MouseUp" MouseLeave="BT_Close_MouseLeave" Cursor="Hand" BorderBrush="#d27970" BorderThickness="1" Width="11" Height="11" HorizontalAlignment="Right">
+                                    <TextBlock HorizontalAlignment="Center" FontSize="8" Foreground="White" Text="x" VerticalAlignment="Bottom" Margin="0,0,0,1" FontFamily="Arial"/>
+                                </Border>
+                            </Border>
+                        </Border>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="2" CornerRadius="0, 0, 3, 3" BorderBrush="#3a4d54" BorderThickness="1, 0, 1, 1">
+            <Border Grid.Row="2" Background="#5f7e89" CornerRadius="0, 0, 3, 3" BorderBrush="#7097a6" BorderThickness="1, 0, 1, 1">
+                <Grid x:Name="InventoryGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="12"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="12"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="9"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="9"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

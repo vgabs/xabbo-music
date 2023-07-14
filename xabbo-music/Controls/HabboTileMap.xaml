@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="xabbo_music.Controls.HabboTileMap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:xabbo_music.Controls"
+             mc:Ignorable="d">
+    <Border Background="#211804" CornerRadius="10" Padding="5">
+        <Grid x:Name="IsometricGrid" MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" Background="#211804" SnapsToDevicePixels="True" ClipToBounds="True">
+            <!-- HabboTiles go inside here -->
+        </Grid>
+    </Border>
+</UserControl>
