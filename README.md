@@ -25,6 +25,7 @@ When editing your songs, if you're connected to Habbo and inside a room, you can
 After your song is ready, click the Builder's Club button to build the song in your room. If everything is done right, a new window will appear:
 
 ![xabbo-music-explanation-4](https://github-production-user-asset-6210df.s3.amazonaws.com/34200697/253669416-395ae77a-733e-42a7-8512-635e68b53dae.png)
+
 Here, you will choose where all the furni is going to be placed. Select the item and left click the tiles you want to add the item on. Right click a coloured tile to unselect it.
 
 ##### SFX and Magic tile
