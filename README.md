@@ -9,7 +9,7 @@ SFX furni in Habbo plays a different note based on the height of that furni. Wit
 The program has mapped the notes from most SFX furni. You can drag those notes to the song timeline to create melodies, and when your song is ready, click on the Builder's Club button to build your song in your room.
 ![xabbo-music-explanation-1](https://github-production-user-asset-6210df.s3.amazonaws.com/34200697/253669100-efdbdbb9-8a0a-4af7-a1de-15a6ff652636.png)
 
-#### Timeline
+### Timeline
 ##### Zoom
 By default, the timeline speed is 50ms. This means that notes on the timeline display are 50ms apart from each other. You can increase this timespan by zooming out the timeline.
 ![xabbo-music-explanation-2](https://github-production-user-asset-6210df.s3.amazonaws.com/34200697/253656720-660fd924-0689-4509-a7ab-60c9951eaba6.png)
@@ -21,7 +21,7 @@ When zooming out, there is notes that you can't see depending on your timeline s
 ##### Play
 When editing your songs, if you're connected to Habbo and inside a room, you can listen to a preview of your music. Simply click the play button and hear the magic happening.
 
-#### Building a song
+### Building a song
 After your song is ready, click the Builder's Club button to build the song in your room. If everything is done right, a new window will appear:
 
 ![xabbo-music-explanation-4](https://github-production-user-asset-6210df.s3.amazonaws.com/34200697/253669416-395ae77a-733e-42a7-8512-635e68b53dae.png)
