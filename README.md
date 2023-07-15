@@ -34,4 +34,4 @@ It doesn't really matter which is the size of your magic tile, but have in mind 
 * ![xabbo-music-explanation-5](https://github.com/scottstamp/RoomExfiltrator/assets/34200697/76596338-9697-4bc3-ba33-2e9e4882091e)
 
 ##### Controller
-The controller is represented by a glowing ball in the room. When playing the song, the it's height will slowly increase, allowing the wireds to know exactly when to play each note. It is **very important** that the controller is placed on a tile that is not elevated (default tile height at :floor).
+The controller is represented by a glowing ball in the room. When playing the song, it's height will slowly increase, allowing the wireds to know exactly when to play each note. It is **very important** that the controller is placed on a tile that is not elevated (default tile height at :floor).
