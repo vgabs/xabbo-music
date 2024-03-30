@@ -19,6 +19,8 @@ using Xabbo.Extension;
 using Xabbo.GEarth;
 using Xabbo.Core;
 
+using GetCatalogPageTask = xabbo_music.Game.GetCatalogPageTask;
+
 namespace xabbo_music
 {
     public class MusicExtension : GEarthExtension
