@@ -19,6 +19,8 @@ using Xabbo.Extension;
 using Xabbo.GEarth;
 using Xabbo.Core;
 
+using GetCatalogPageTask = xabbo_music.Game.GetCatalogPageTask;
+
 namespace xabbo_music
 {
     public class MusicExtension : GEarthExtension
@@ -372,7 +374,7 @@ namespace xabbo_music
                         await Task.Delay(250);
 
                         // Add effect to generate the sound
-                        await SendAsync(Out["UpdateAction"], (int)effect.Id, 1, 0, "", 1, (int)soundEffect.Id, 0, 1, 100, 0);
+                        await SendAsync(Out["UpdateAction"], (int)effect.Id, 1, 0, "", 1, (int)soundEffect.Id, 0, 1, 100, 0, 0);
                         await Task.Delay(250);
 
                         triggerPoints.Add(note.Location);
@@ -389,7 +391,7 @@ namespace xabbo_music
                     // Add condition: controller has altitude
                     await Task.Delay(250);
                     var _altitudeCondition = await PlaceFurni(bcCatalogPages["wf_cnd"].Id, bcCatalogOffers["wf_cnd_has_altitude"].Id, (int)note.Location.X, (int)note.Location.Y);
-                    await SendAsync(Out["UpdateCondition"], (int)_altitudeCondition.Id, 2, noteInfo.Item2.Item1 / 50 + 1, 1, "", 1, (int)controller.Id, 0, 1, 100, 0);
+                    await SendAsync(Out["UpdateCondition"], (int)_altitudeCondition.Id, 2, noteInfo.Item2.Item1 / 50 + 1, 1, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
                     await Task.Delay(250);
                 }
             }
@@ -398,7 +400,7 @@ namespace xabbo_music
             {
                 // Add trigger to watch the controller every 50ms
                 var _shortTrigger = await PlaceFurni(bcCatalogPages["wf_trg"].Id, bcCatalogOffers["wf_trg_period_short"].Id, (int)point.X, (int)point.Y);
-                await SendAsync(Out["UpdateTrigger"], (int)_shortTrigger.Id, 1, 1, 0, 0, 0, "");
+                await SendAsync(Out["UpdateTrigger"], (int)_shortTrigger.Id, 1, 1, 0, 0, 0, "", 0);
                 await Task.Delay(250);
             }
 
@@ -409,49 +411,49 @@ namespace xabbo_music
             wiredSquareIndex++;
 
             var shortTrigger = await PlaceFurni(bcCatalogPages["wf_trg"].Id, bcCatalogOffers["wf_trg_period_short"].Id, (int)nextPoint.X, (int)nextPoint.Y);
-            await SendAsync(Out["UpdateTrigger"], (int)shortTrigger.Id, 1, 1, 0, 0, 0, "");
+            await SendAsync(Out["UpdateTrigger"], (int)shortTrigger.Id, 1, 1, 0, 0, 0, "", 0);
             await Task.Delay(250);
 
             await SendAsync(Out["UseFurniture"], (int)controller.Id, 0);
             await Task.Delay(250);
 
             var stateAndPositionCondition = await PlaceFurni(bcCatalogPages["wf_cnd"].Id, bcCatalogOffers["wf_cnd_match_snapshot"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateCondition"], (int)stateAndPositionCondition.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateCondition"], (int)stateAndPositionCondition.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
 
             var setFurniHeightEffect = await PlaceFurni(bcCatalogPages["wf_act"].Id, bcCatalogOffers["wf_act_set_altitude"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateAction"], (int)setFurniHeightEffect.Id, 2, 1, 0, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateAction"], (int)setFurniHeightEffect.Id, 2, 1, 0, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
 
             // enableController
             nextPoint = wiredTiles[wiredSquareIndex];
             wiredSquareIndex++;
 
             shortTrigger = await PlaceFurni(bcCatalogPages["wf_trg"].Id, bcCatalogOffers["wf_trg_period_short"].Id, (int)nextPoint.X, (int)nextPoint.Y);
-            await SendAsync(Out["UpdateTrigger"], (int)shortTrigger.Id, 1, 1, 0, 0, 0, "");
+            await SendAsync(Out["UpdateTrigger"], (int)shortTrigger.Id, 1, 1, 0, 0, 0, "", 0);
             await Task.Delay(250);
 
             await SendAsync(Out["UseFurniture"], (int)controller.Id, 0);
             await Task.Delay(250);
 
             stateAndPositionCondition = await PlaceFurni(bcCatalogPages["wf_cnd"].Id, bcCatalogOffers["wf_cnd_match_snapshot"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateCondition"], (int)stateAndPositionCondition.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateCondition"], (int)stateAndPositionCondition.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
             await Task.Delay(250);
 
             var altitudeCondition = await PlaceFurni(bcCatalogPages["wf_cnd"].Id, bcCatalogOffers["wf_cnd_has_altitude"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateCondition"], (int)altitudeCondition.Id, 2, 0, 2, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateCondition"], (int)altitudeCondition.Id, 2, 0, 2, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
             await Task.Delay(500);
 
             altitudeCondition = await PlaceFurni(bcCatalogPages["wf_cnd"].Id, bcCatalogOffers["wf_cnd_has_altitude"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateCondition"], (int)altitudeCondition.Id, 2, (int)MainWindow.FullSong.Select(x => x.Item1).Max() / 50 + 1, 2, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateCondition"], (int)altitudeCondition.Id, 2, (int)MainWindow.FullSong.Select(x => x.Item1).Max() / 50 + 1, 2, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
             await Task.Delay(500);
 
             var xtraOrEvalAddon = await PlaceFurni(bcCatalogPages["wf_add"].Id, bcCatalogOffers["wf_xtra_or_eval"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateAddon"], (int)xtraOrEvalAddon.Id, 3, 1, 0, 0, "", 2, (int)altitudeCondition.Id, (int)stateAndPositionCondition.Id, 1, 100, 0);
+            await SendAsync(Out["UpdateAddon"], (int)xtraOrEvalAddon.Id, 3, 1, 0, 0, "", 2, (int)altitudeCondition.Id, (int)stateAndPositionCondition.Id, 1, 100, 0, 0);
 
             setFurniHeightEffect = await PlaceFurni(bcCatalogPages["wf_act"].Id, bcCatalogOffers["wf_act_set_altitude"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateAction"], (int)setFurniHeightEffect.Id, 2, 0, 2, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateAction"], (int)setFurniHeightEffect.Id, 2, 0, 2, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
 
             var actMatchEffect = await PlaceFurni(bcCatalogPages["wf_act"].Id, bcCatalogOffers["wf_act_match_to_sshot"].Id, (int)nextPoint.X, (int)nextPoint.Y, 500);
-            await SendAsync(Out["UpdateAction"], (int)actMatchEffect.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0);
+            await SendAsync(Out["UpdateAction"], (int)actMatchEffect.Id, 4, 1, 0, 0, 0, "", 1, (int)controller.Id, 0, 1, 100, 0, 0);
         }
 
         async Task<FloorItem> PlaceFurni(int catalogPageId, int catalogOfferId, int xPos, int yPos, int delay = 250)
