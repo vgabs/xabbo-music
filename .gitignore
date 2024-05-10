@@ -2,4 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/xabbo-music/bin/Debug/net7.0-windows
+/xabbo-music/bin/**
+/xabbo-music/obj/**
