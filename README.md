@@ -54,7 +54,7 @@ The **controller** is represented by a glowing ball in the room. It moves upward
 ## 🎶 Xabbo Music Songs Repository
 Looking for pre-made songs? Want to share your own creations?
 
-Check out the **[Xabbo Songs Repository](https://github.com/YOUR-REPO-LINK)**! It's a community-driven collection of songs for Xabbo Music. Feel free to contribute and discover new tracks!
+Check out the **[Xabbo Songs Repository](https://github.com/vgabs/xabbo-songs)**! It's a community-driven collection of songs for Xabbo Music. Feel free to contribute and discover new tracks!
 
 ---
 
